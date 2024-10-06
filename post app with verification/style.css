@@ -1,0 +1,75 @@
+body {
+    background: rgb(33, 71, 99)
+}
+
+.form-control {
+    width: 300px;
+    margin-left: 20px;
+
+}
+
+.formdiv {
+    width: 35%;
+    margin: auto;
+    background-color: rgb(242, 241, 241);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 450px;
+ padding: 30px;
+    border-radius: 6px;
+
+}
+
+#postdiv {
+    width: 50%;
+    margin: auto;
+    background-color:  rgb(242, 241, 241);
+    box-shadow: 0 0 10px black;
+    height: auto;
+    border-radius: 6px;
+    display: none;
+
+}
+
+.textpost {
+    height: 80px;
+    width: 80%;
+    border-radius: 6px;
+
+
+}
+
+.posth2 {
+    padding-top: 10px;
+}
+
+.formh2 {
+    padding-top: 10px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.post-content {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.img {
+    position: relative;
+    right: 180px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 0;
+}

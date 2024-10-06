@@ -1,0 +1,50 @@
+
+
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Post Assignment</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="formdiv mt-5" id="myform">
+    <form onsubmit="return login(event)">
+      <div class="mb-3">
+        <h2 class="mx-3 formh2">Login Form:</h2>
+        <label for="name" class="form-label mx-3">Name:</label>
+        <input type="text" class="form-control" id="name">
+      
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label text-dark mx-3">Password:</label>
+        <input type="password" id="password" class="form-control mx-3">
+      </div>
+      <button type="submit" class="btn btn-success formsubmit mx-3 mt-3 mb-4">Login</button>
+      <div id="emailHelp" class="form-text text-dark mx-3">We'll never share your info with anyone else.</div>
+    </form>
+  </div>
+
+  <br><br>
+  <div class="centered-container" id="postdiv" style="display: none;">
+    <div class="post-content">
+        <h2 class="mx-3 posth2">Post Page:</h2>
+        <input type="text" id="posttext" class="mx-4 mt-2 textpost form-control" required placeholder="What's on your mind?">
+        <input type="file" id="postImage" accept="image/*" class="mx-4 mt-2">
+        <button type="button" onclick="postMessage()" class="btn btn-success postsubmit mx-4 mt-2 mb-3">Post</button>
+        <button type="button" onclick="logout()" class="btn btn-danger mx-4 mt-2 mb-3">Logout</button> 
+        <div id="postdisplay" class="postContainer p-3"></div>
+    </div>
+</div>
+
+ <script src="app.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>
